@@ -58,3 +58,4 @@ We would like to thank Kaggle for providing the dataset and hosting this excitin
 ## Contact
 
 If you have any questions or feedback regarding this project, feel free to contact us.
+Email: omar-kammoun@outlook.com
