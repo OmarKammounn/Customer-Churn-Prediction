@@ -44,7 +44,7 @@ The final random forest model achieved an accuracy of 93% on the test dataset. T
 
 ## Acknowledgements
 
-I would like to thank Kaggle for providing the dataset and hosting this exciting competition. The opportunity to work on this project has allowed me to enhance my data science and machine learning skills significantly.
+I would like to thank Kaggle for providing the dataset and hosting this exciting competition. The opportunity to work on this project has allowed me to enhance my data science and machine learning skills significantly. I would also like to express my sincere gratitude to all of the dedicated instructors and supportive classmates who were instrumental in making this project and Bootcamp a success.
 
 ## Contact
 
