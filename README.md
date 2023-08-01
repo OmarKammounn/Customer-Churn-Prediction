@@ -1,35 +1,54 @@
-# Customer Churn Prediction Project
+# Predicting Customer Churn in Telecommunications - Kaggle Competition
 
-## Overview
-This project is part of my data science portfolio and aims to predict customer churn for a telecom company. The goal is to develop a model that can accurately predict whether a customer is likely to churn or not. By identifying potential churners, the telecom company can take proactive retention measures to reduce customer churn and improve customer satisfaction.
+## Table of Contents
 
-## Dataset
-The dataset used for this project is sourced from Kaggle and contains historical customer data from the telecom company. It includes various features such as customer demographics, call usage, and international plan status. The target variable is whether a customer churned (yes or no).
+- [Introduction](#introduction)
+- [Dataset Description](#dataset-description)
+- [Project Overview](#project-overview)
+- [Project Steps](#project-steps)
+- [Evaluation Metric](#evaluation-metric)
+- [Model Performance](#model-performance)
+- [Conclusion](#conclusion)
+- [Acknowledgements](#acknowledgements)
 
-## Data Preprocessing
-Before building the predictive model, the dataset underwent several preprocessing steps, including handling missing values, encoding categorical variables, and scaling numerical features. Exploratory data analysis (EDA) was also performed to gain insights into the distribution and relationship of features with churn.
+## Introduction
 
-## Model Building
-For the churn prediction, a Random Forest classification model was employed due to its robustness and ability to handle complex datasets. The dataset was split into training and testing sets to evaluate the model's performance. Several evaluation metrics such as accuracy, precision, recall, and F1-score were used to assess the model's effectiveness.
+This repository contains my submission for the "Predicting Customer Churn in Telecommunications" Kaggle competition. The competition aims to predict whether a customer will change telecommunications providers, known as "churning." The dataset contains various customer attributes and a target variable indicating whether the customer churned or not.
 
-## Model Evaluation
-The Random Forest model achieved an accuracy of 93% on the test set, indicating its capability to accurately classify customers into churn and non-churn categories.
+## Dataset Description
 
-## Insights and Retention Strategies
-Through the analysis of feature importance, we identified key factors that contribute to customer churn. These factors include the number of customer service calls, total international charges, and contract length. Based on these insights, we recommend the following retention strategies:
+The dataset provided by Kaggle consists of 4250 samples, each containing 19 input features and one target variable "churn." The input features include customer attributes such as state, account length, area code, international plan, voice mail plan, call minutes and charges for different time periods, international calls, and the number of customer service calls. The target variable "churn" represents customer churn (yes or no).
 
-1. Improve Customer Service: Focus on reducing the number of customer service calls by addressing customer issues proactively and providing excellent customer support.
+## Project Overview
 
-2. International Plan Offers: Introduce targeted offers or discounts for international plans to retain customers with a higher average of international charges.
+In this project, I aimed to build a predictive model that accurately classifies whether a customer is likely to churn based on the provided features. The goal was to develop a machine learning model that can assist telecommunications companies in identifying and retaining potential churn customers by proactively offering retention strategies.
 
-3. Contract Incentives: Provide incentives or benefits for customers to opt for longer contract lengths to increase customer loyalty.
+## Project Steps
 
-4. Personalized Promotions: Tailor marketing campaigns and promotions based on customer preferences and usage patterns to increase customer engagement and satisfaction.
+1. **Data Exploration and Preprocessing:** I started by exploring the dataset to gain insights into the data distribution and identify any missing values. I performed data preprocessing steps, including handling categorical variables and scaling numerical features.
+
+2. **Model Selection and Hyperparameter Tuning:** I experimented with various machine learning algorithms, and after careful evaluation, I found that the random forest classifier performed best for this task. I used cross-validation with grid search to fine-tune the hyperparameters of the random forest model, optimizing its performance.
+
+3. **Significance Testing:** I conducted significance tests on different features to understand if the differences in behavior between churn and non-churned customers were statistically significant or due to chance. This analysis provided valuable insights into the characteristics of churn customers.
+
+4. **Model Training and Evaluation:** I trained the final random forest model on the training dataset and evaluated its performance using cross-validation. While I did not use a confusion matrix, I assessed the model's predictive power using evaluation metrics such as accuracy.
+
+5. **Making Predictions:** I used the trained model to make predictions on the test dataset provided by Kaggle.
+
+## Evaluation Metric
+
+The Kaggle competition evaluated submissions based on the accuracy metric. Accuracy is calculated as the number of correct predictions divided by the total number of test samples. A higher accuracy indicates better model performance.
+
+## Model Performance
+
+The final random forest model achieved an accuracy of 93% on the test dataset. This demonstrates the effectiveness of the model in predicting customer churn in telecommunications.
 
 ## Conclusion
-The Customer Churn Prediction project successfully developed a Random Forest model to predict customer churn with high accuracy. By understanding the factors influencing churn and implementing the recommended retention strategies, the telecom company can improve customer retention and overall business performance.
 
-For more details and code implementation, please refer to the Google Colab Notebook provided in this repository.
+In conclusion, this project successfully addresses the challenge of predicting customer churn in the telecommunications industry. The developed random forest model can help companies identify customers at risk of churning and devise targeted retention strategies to reduce customer churn and improve customer satisfaction.
 
-## Acknowledgments
-The dataset used for this project is sourced from Kaggle: https://www.kaggle.com/competitions/customer-churn-prediction-2020/data.
+## Acknowledgements
+
+I would like to thank Kaggle for providing the dataset and hosting this exciting competition. The opportunity to work on this project has allowed me to enhance my data science and machine learning skills significantly.
+
+If you have any questions or feedback regarding this project, feel free to contact me.
