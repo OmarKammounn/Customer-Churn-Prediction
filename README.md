@@ -1,39 +1,38 @@
-# Predicting Customer Churn in Telecommunications - Kaggle Competition
+# Customer Churn Prediction Project
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Dataset Description](#dataset-description)
-- [Project Overview](#project-overview)
+- [Overview](#overview)
+- [Dataset](#dataset)
 - [Project Steps](#project-steps)
 - [Evaluation Metric](#evaluation-metric)
 - [Model Performance](#model-performance)
-- [Conclusion](#conclusion)
 - [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
-## Introduction
+## Overview
 
-This repository contains my submission for the "Predicting Customer Churn in Telecommunications" Kaggle competition. The competition aims to predict whether a customer will change telecommunications providers, known as "churning." The dataset contains various customer attributes and a target variable indicating whether the customer churned or not.
+This repository contains my work for the Customer Churn Prediction project, where I aimed to predict whether a telecommunications customer will churn or not. Churning refers to the process of customers switching to other providers. The project involved exploring the dataset, preprocessing the data, training a machine learning model, making predictions, and analyzing the results to understand customer churn patterns. The goal was to develop effective retention strategies to reduce customer churn and improve customer loyalty.
 
-## Dataset Description
+## Dataset
 
-The dataset provided by Kaggle consists of 4250 samples, each containing 19 input features and one target variable "churn." The input features include customer attributes such as state, account length, area code, international plan, voice mail plan, call minutes and charges for different time periods, international calls, and the number of customer service calls. The target variable "churn" represents customer churn (yes or no).
-
-## Project Overview
-
-In this project, I aimed to build a predictive model that accurately classifies whether a customer is likely to churn based on the provided features. The goal was to develop a machine learning model that can assist telecommunications companies in identifying and retaining potential churn customers by proactively offering retention strategies.
+The dataset used for this project includes 4250 samples, each with 19 features and a binary target variable "churn" (indicating whether the customer churned or not). The features include customer demographics, call details, charges, and service usage. The target variable "churn" denotes whether the customer churned (1) or not (0).
 
 ## Project Steps
 
-1. **Data Exploration and Preprocessing:** I started by exploring the dataset to gain insights into the data distribution and identify any missing values. I performed data preprocessing steps, including handling categorical variables and scaling numerical features.
+1. **Data Exploration and Preprocessing:** I began by exploring the dataset, checking for missing values, and performing data preprocessing. This step involved handling categorical variables, scaling numerical features, and ensuring the data was ready for model training.
 
-2. **Model Selection and Hyperparameter Tuning:** I experimented with various machine learning algorithms, and after careful evaluation, I found that the random forest classifier performed best for this task. I used cross-validation with grid search to fine-tune the hyperparameters of the random forest model, optimizing its performance.
+2. **Model Training and Evaluation:** I trained a random forest classifier on the preprocessed training dataset. Using cross-validation, I evaluated the model's performance and calculated key metrics, such as accuracy, to assess its predictive power.
 
-3. **Significance Testing:** I conducted significance tests on different features to understand if the differences in behavior between churn and non-churned customers were statistically significant or due to chance. This analysis provided valuable insights into the characteristics of churn customers.
+3. **Making Predictions:** After training the model, I used it to make predictions on the test dataset provided by Kaggle.
 
-4. **Model Training and Evaluation:** I trained the final random forest model on the training dataset and evaluated its performance using cross-validation. While I did not use a confusion matrix, I assessed the model's predictive power using evaluation metrics such as accuracy.
+4. **Data Visualization and Insights:** With the predictions, I created various plots and visualizations to gain insights into the dataset. These visualizations helped me understand the relationships between different features and the target variable "churn." By comparing churn and non-churned customers' patterns, I identified potential reasons for churn.
 
-5. **Making Predictions:** I used the trained model to make predictions on the test dataset provided by Kaggle.
+5. **Significance Testing:** To investigate the significance of different features, I conducted significance tests to determine if the observed differences in behavior between churn and non-churned customers were statistically significant or due to chance. This analysis provided valuable insights into the characteristics of churn customers.
+
+6. **Developing Retention Strategies:** Leveraging the insights gained from data visualization and significance testing, I developed customer retention strategies. These strategies aimed to proactively identify customers at risk of churning and offer targeted incentives, discounts, or personalized offers to encourage customer loyalty and reduce churn.
+
+7. **Conclusion and Recommendations:** In the final step, I summarized the project findings, including the model's effectiveness in predicting customer churn, insights gained from data analysis, and the recommended retention strategies. The culmination of the project involved presenting the results and insights to my bootcamp classmates and a jury consisting of experienced instructors. The positive feedback and validation received during the presentation reinforced the significance and impact of the project. Overall, the Customer Churn Prediction project demonstrated the value of data-driven decision-making in reducing churn and enhancing business sustainability in the telecommunications industry.
 
 ## Evaluation Metric
 
@@ -43,12 +42,10 @@ The Kaggle competition evaluated submissions based on the accuracy metric. Accur
 
 The final random forest model achieved an accuracy of 93% on the test dataset. This demonstrates the effectiveness of the model in predicting customer churn in telecommunications.
 
-## Conclusion
-
-In conclusion, this project successfully addresses the challenge of predicting customer churn in the telecommunications industry. The developed random forest model can help companies identify customers at risk of churning and devise targeted retention strategies to reduce customer churn and improve customer satisfaction.
-
 ## Acknowledgements
 
 I would like to thank Kaggle for providing the dataset and hosting this exciting competition. The opportunity to work on this project has allowed me to enhance my data science and machine learning skills significantly.
+
+## Contact
 
 If you have any questions or feedback regarding this project, feel free to contact me.
