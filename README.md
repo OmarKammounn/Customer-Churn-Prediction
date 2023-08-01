@@ -16,7 +16,7 @@ This repository contains my work for the Customer Churn Prediction project, wher
 
 ## Dataset
 
-The dataset used for this project includes 4250 samples, each with 19 features and a binary target variable "churn" (indicating whether the customer churned or not). The features include customer demographics, call details, charges, and service usage. The target variable "churn" denotes whether the customer churned (1) or not (0).
+The dataset used for this project includes 4250 samples, each with 19 features and a binary target variable "churn" (indicating whether the customer churned or not). The features include customer demographics, call details, charges, and service usage. The target variable "churn" denotes whether the customer churned (yes) or not (no).
 
 ## Project Steps
 
